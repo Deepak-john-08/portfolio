@@ -6,15 +6,15 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const projects = [
-  { id: 1, title: "AI-Powered Analytics Dashboard", description: "A comprehensive platform for real-time data visualization and insight generation using advanced AI algorithms." },
-  { id: 2, title: "Mobile-First E-commerce Solution", description: "Developed a responsive and intuitive mobile shopping application focusing on user experience and conversion optimization." },
-  { id: 3, title: "Scalable Cloud Orchestration Service", description: "Engineered a robust backend system for managing and scaling cloud resources efficiently across multiple providers." },
-  { id: 4, title: "Collaborative Project Management Tool", description: "A web application designed to streamline team collaboration, task tracking, and project reporting with a clean interface." },
+  { id: 1, title: "AI-Powered Medical Diagnosis Tool", description: "Tech Stack: Python, scikit-learn, TensorFlow, Streamlit Developed a machine learning model to predict diseases such as diabetes and heart disease from patient data. The project features an interactive Streamlit web app for real-time predictions and intuitive data visualization, aimed at supporting early diagnosis and preventive care." },
+  { id: 2, title: ".Fashion Image Classification UI", description: "Python, TensorFlow, Keras, Streamlit. A deep learning-powered UI for real-time classification of fashion items using the Fashion MNIST dataset."} ,
+  { id: 3, title: "Chatbot for Cybersecurity Training and Awareness (currently working)", description: "Python, Node.js, NLP libraries, MongoDB. An interactive chatbot that promotes cybersecurity awareness through educational content and phishing simulations." },
+  { id: 4, title: "Expense Tracker", description: "Tech Stack: ReactJS, Tailwind CSS, Node.js, MongoDB A full-featured personal finance management tool with user authentication and real-time data tracking. Includes dynamic chart visualizations and a clean, responsive UI for seamless budgeting and expense analysis. Built with a robust backend and secure database integration." },
 ];
 
-const careerObjective = "A highly motivated and results-oriented Software Engineer with a passion for developing innovative and scalable web applications. Eager to leverage cutting-edge technologies to solve complex problems and contribute to impactful projects in a dynamic team environment.";
+const careerObjective = "M.Tech in Computer Science | Machine Intelligence Enthusiast";
 
-const personalBio = "Deepak V is an innovative Software Engineer specializing in full-stack development and modern cloud architectures. With a keen eye for detail and a dedication to crafting elegant, efficient, and user-centric applications, Deepak thrives on turning complex challenges into seamless digital experiences. Proven ability to quickly adapt to new technologies and collaborate effectively in fast-paced, agile environments. Committed to continuous learning and driving technological advancement.";
+const personalBio = "I’m a curious mind, exploring the world of Machine Intelligence through my M.Tech journey in Computer Science. I’m especially drawn to how machines can learn and understand human language. Whether it's building smarter systems or simplifying complex decisions with data, I’m passionate about blending research and creativity to make technology more human-aware.";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         
         {/* Hero Section */}
         <section id="hero" className="text-center pt-16 md:pt-24 min-h-[calc(100vh-10rem)] md:min-h-[calc(100vh-12rem)] flex flex-col justify-center items-center">
-          <AnimatedName name="DeepakV" />
+          <AnimatedName name="Deepak V" />
           <p className="mt-6 text-lg md:text-xl text-muted-foreground font-body max-w-2xl leading-relaxed">
             {careerObjective}
           </p>
@@ -38,12 +38,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 bg-card text-card-foreground p-8 md:p-12 rounded-xl shadow-2xl">
             <div className="flex-shrink-0">
               <Image 
-                src="https://placehold.co/200x200.png" 
+                src="/profile.png" 
                 alt="Deepak V" 
                 width={200} 
                 height={200} 
                 className="rounded-full shadow-lg border-4 border-accent object-cover" 
-                data-ai-hint="professional portrait" 
                 priority
               />
             </div>
@@ -80,9 +79,9 @@ export default function Home() {
         <section id="contact" className="py-12 md:py-16 text-center">
           <h2 className="text-4xl md:text-5xl font-headline text-primary mb-12">Get in Touch</h2>
           <div className="flex flex-col items-center md:flex-row md:justify-center md:space-x-12 space-y-8 md:space-y-0 max-w-3xl mx-auto">
-            <IconLink href="mailto:deepak.v.portfolio@example.com" icon={<Mail />} text="deepak.v.portfolio@example.com" />
-            <IconLink href="tel:+919876543210" icon={<Phone />} text="+91 98765 43210" />
-            <IconLink href="https://github.com/deepakv-example-profile" icon={<Github />} text="GitHub Profile" />
+            <IconLink href="mailto:deepakv081099@gmail.com" icon={<Mail />} text="deepakv081099@gmail.com" />
+            <IconLink href="tel:+917639259257" icon={<Phone />} text="+91 76392 59257" />
+            <IconLink href="https://github.com/Deepak-john-08" icon={<Github />} text="GitHub Profile" />
           </div>
         </section>
 

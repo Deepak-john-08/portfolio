@@ -1,4 +1,6 @@
 
+'use client';
+
 import Image from 'next/image';
 import { Mail, Phone, Github, Download } from 'lucide-react';
 import AnimatedName from '@/components/animated-name';
@@ -6,7 +8,8 @@ import { IconLink } from '@/components/icon-link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const projects = [
+const projects = [ 
+
   { id: 1, title: "Chatbot for Cybersecurity Training and Awareness (currently working)", description: "Tech Stack: Python, Node.js, NLP libraries, MongoDB.Currently developing an interactive AI-powered chatbot to promote cybersecurity awareness in both corporate and public environments. It delivers educational modules, simulated phishing scenarios, and adapts content for various user types. Designed with modularity, secure data handling, and feedback integration for continuous improvement." },
   { id: 2, title: "AI-Powered Medical Diagnosis Tool", description: "Tech Stack: Python, scikit-learn, TensorFlow, Streamlit Developed a machine learning model to predict diseases such as diabetes and heart disease from patient data. The project features an interactive Streamlit web app for real-time predictions and intuitive data visualization, aimed at supporting early diagnosis and preventive care." },
   { id: 3, title: "Fashion Image Classification UI", description: "Python, TensorFlow, Keras, Streamlit. A deep learning-powered UI for real-time classification of fashion items using the Fashion MNIST dataset."} ,
@@ -18,8 +21,37 @@ const careerObjective = "M.Tech in Computer Science | Machine Intelligence Enthu
 const personalBio = "I’m a curious mind, exploring the world of Machine Intelligence through my M.Tech journey in Computer Science. I’m especially drawn to how machines can learn and understand human language. Whether it's building smarter systems or simplifying complex decisions with data, I’m passionate about blending research and creativity to make technology more human-aware.";
 
 export default function Home() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-background text-foreground flex flex-col items-center selection:bg-primary selection:text-primary-foreground">
+      {/* Fixed Header with Navigation */}
+      <header className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 shadow-sm">
+        <div className="w-full max-w-5xl mx-auto p-4 flex justify-end">
+          <div className="flex space-x-4">
+            <Button variant="ghost" onClick={() => scrollToSection('hero')}>
+              Home
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('about')}>
+              About Me
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('projects')}>
+              Projects
+            </Button>
+            <Button variant="ghost" onClick={() => scrollToSection('contact')}>
+              Contact
+            </Button>
+          </div>
+        </div>
+      </header>
       <div className="w-full max-w-5xl p-6 md:p-10 space-y-20 md:space-y-28">
         
         {/* Hero Section */}

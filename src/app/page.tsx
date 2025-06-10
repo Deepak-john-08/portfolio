@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Mail, Phone, Github, Download } from 'lucide-react';
 import AnimatedName from '@/components/animated-name';
@@ -38,7 +39,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 bg-card text-card-foreground p-8 md:p-12 rounded-xl shadow-2xl">
             <div className="flex-shrink-0">
               <Image 
-                src="/profile.png" 
+                src="/Deepak_photo.jpg" 
                 alt="Deepak V" 
                 width={200} 
                 height={200} 

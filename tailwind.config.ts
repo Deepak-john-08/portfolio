@@ -11,8 +11,8 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        headline: ['Space Grotesk', 'sans-serif'],
+        code: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -88,10 +88,16 @@ export default {
             height: '0',
           },
         },
+        streamInChar: { // Added from globals.css for completeness if referenced elsewhere
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '70%': { opacity: '1', transform: 'translateX(5px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        streamInChar: 'streamInChar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards', // Added
       },
     },
   },

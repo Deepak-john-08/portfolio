@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const projects = [
-  { id: 1, title: "AI-Powered Medical Diagnosis Tool", description: "Tech Stack: Python, scikit-learn, TensorFlow, Streamlit Developed a machine learning model to predict diseases such as diabetes and heart disease from patient data. The project features an interactive Streamlit web app for real-time predictions and intuitive data visualization, aimed at supporting early diagnosis and preventive care." },
-  { id: 2, title: ".Fashion Image Classification UI", description: "Python, TensorFlow, Keras, Streamlit. A deep learning-powered UI for real-time classification of fashion items using the Fashion MNIST dataset."} ,
-  { id: 3, title: "Chatbot for Cybersecurity Training and Awareness (currently working)", description: "Python, Node.js, NLP libraries, MongoDB. An interactive chatbot that promotes cybersecurity awareness through educational content and phishing simulations." },
-  { id: 4, title: "Expense Tracker", description: "Tech Stack: ReactJS, Tailwind CSS, Node.js, MongoDB A full-featured personal finance management tool with user authentication and real-time data tracking. Includes dynamic chart visualizations and a clean, responsive UI for seamless budgeting and expense analysis. Built with a robust backend and secure database integration." },
+  { id: 1, title: "Chatbot for Cybersecurity Training and Awareness (currently working)", description: "Tech Stack: Python, Node.js, NLP libraries, MongoDB.Currently developing an interactive AI-powered chatbot to promote cybersecurity awareness in both corporate and public environments. It delivers educational modules, simulated phishing scenarios, and adapts content for various user types. Designed with modularity, secure data handling, and feedback integration for continuous improvement." },
+  { id: 2, title: "AI-Powered Medical Diagnosis Tool", description: "Tech Stack: Python, scikit-learn, TensorFlow, Streamlit Developed a machine learning model to predict diseases such as diabetes and heart disease from patient data. The project features an interactive Streamlit web app for real-time predictions and intuitive data visualization, aimed at supporting early diagnosis and preventive care." },
+  { id: 3, title: "Fashion Image Classification UI", description: "Python, TensorFlow, Keras, Streamlit. A deep learning-powered UI for real-time classification of fashion items using the Fashion MNIST dataset."} ,
+  { id: 4, title: "Expense Tracker", description: "Tech Stack: Python, TensorFlow, Keras, Streamlit.Built a lightweight CNN model using the Fashion MNIST dataset to classify clothing items with high accuracy. Developed a drag-and-drop Streamlit interface for real-time predictions, optimized for responsiveness and ease of use. Focused on delivering a clean user experience and accessible AI-driven fashion recognition." },
 ];
 
 const careerObjective = "M.Tech in Computer Science | Machine Intelligence Enthusiast";
@@ -41,8 +41,8 @@ export default function Home() {
               <Image 
                 src="/Deepak_photo.jpg" 
                 alt="Deepak V" 
-                width={200} 
-                height={200} 
+                width={600} 
+                height={750} 
                 className="rounded-full shadow-lg border-4 border-accent object-cover" 
                 priority
               />
@@ -94,7 +94,7 @@ export default function Home() {
               Download Resume <Download className="ml-2 w-5 h-5" />
             </a>
           </Button>
-          <p className="text-muted-foreground mt-4 text-sm font-body">(You'll need to add your resume PDF to the /public folder)</p>
+          <p className="text-muted-foreground mt-4 text-sm font-body">(Resume will open in another tab)</p>
         </section>
 
       </div>
